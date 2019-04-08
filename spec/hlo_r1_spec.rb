@@ -1,1 +1,2 @@
-requre './lib/solutions/HLO/hello.rb'
+require './lib/solutions/HLO/hello.rb'
+
