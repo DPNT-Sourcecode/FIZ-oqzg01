@@ -14,13 +14,15 @@ class FizzBuzz
       result.push 'buzz'
     elsif number % 3 == 0 || str_ary.each.include?('3')
       result.push 'fizz'
-    elsif number == 11 || 22 || 33 || 44 || 55 || 66 || 77 || 88 || 99
+    elsif str_ary.length > 1 && str_ary.uniq.length == 1
       result.push 'deluxe'
     else
       return number
     end
 
-    if  str_ary.length > 1 && str_ary.uniq.length == 1
+    if  str_ary[0] == 'deluxe'
+      str_ary[0].delete
+    elsif str_ary.length > 1 && str_ary.uniq.length == 1
       result.push 'deluxe'
     end
 
@@ -29,6 +31,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
