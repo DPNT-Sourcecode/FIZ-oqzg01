@@ -46,4 +46,9 @@ describe "FIZZBUZZ, if a number is a multiple of three then it returns 'fizz'" d
     expect(FizzBuzz.new.fizz_buzz(111)).to eq('fizz fake deluxe')
   end
 
+  it "returns 'deluxe' if divisible by 3 and contains a 3" do
+    expect(FizzBuzz.new.fizz_buzz(33)).to eq('fizz fake deluxe')
+  end
+
 end
+
