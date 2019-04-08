@@ -20,10 +20,12 @@ class FizzBuzz
       return number
     end
 
-    if  str_ary[0] == 'deluxe'
-      str_ary[0].delete
-    elsif str_ary.length > 1 && str_ary.uniq.length == 1
+    if str_ary.length > 1 && str_ary.uniq.length == 1
       result.push 'deluxe'
+    end
+
+    if str_ary[0] == 'deluxe'
+      str_ary[0].shift
     end
 
     return result.join(' ')
@@ -31,6 +33,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
