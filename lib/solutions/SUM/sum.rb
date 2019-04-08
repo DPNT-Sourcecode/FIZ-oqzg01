@@ -3,7 +3,7 @@ class Sum
 
   def sum(x, y)
     answer = x + y
-    if answer.int? == true
+    if answer.integer? == true
       return answer
     else
       raise 'Not implemented'
@@ -11,5 +11,6 @@ class Sum
   end
 
 end
+
 
 
