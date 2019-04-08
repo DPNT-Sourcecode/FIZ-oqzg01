@@ -9,10 +9,3 @@ describe "returns 'hello world'" do
     expect(Hello.new.hello("BOB")).to eq("Hello, World!")
   end
 end
-
-
-
-
-
-
-
