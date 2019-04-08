@@ -4,12 +4,6 @@ class FizzBuzz
   def fizz_buzz(number)
     str_numb = number.to_s
     str_ary = str_numb.split('')
-    print str_ary
-    if str_ary.each.include?('3')
-      puts 'cool'
-    else
-      puts 'not cool'
-    end
 
     if number % 15 == 0
       return 'fizz buzz'
@@ -34,3 +28,4 @@ class FizzBuzz
   end
 
 end
+
