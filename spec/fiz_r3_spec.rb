@@ -35,7 +35,7 @@ describe "FIZZBUZZ, if a number is a multiple of three then it returns 'fizz'" d
   end
 
   it "returns 'deluxe' if over 10 and each number is the same" do
-    expect(FizzBuzz.new.fizz_buzz(77)).to eq('fake deluxe')
+    expect(FizzBuzz.new.fizz_buzz(77)).to eq(77)
   end
 
   it "returns 'fizz deluxe' if over 10 and divisible by 3 and number has matching numbers" do
@@ -61,8 +61,9 @@ describe "FIZZBUZZ, if a number is a multiple of three then it returns 'fizz'" d
   it "369" do
     expect(FizzBuzz.new.fizz_buzz(369)).to eq('fizz fake deluxe')
   end
-  
+
 
 end
+
 
 

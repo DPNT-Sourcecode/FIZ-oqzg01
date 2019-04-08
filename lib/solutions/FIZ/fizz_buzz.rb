@@ -17,8 +17,8 @@ class FizzBuzz
       result.push 'fizz'
     elsif number % 3 == 0 && str_ary.each.include?('3') || number % 5 == 0 && str_ary.each.include?('5')
       result.push 'deluxe'
-    elsif number.even? == false
-      result.push 'fake deluxe'
+    # elsif number.even? == false
+    #   result.push 'fake deluxe'
     else
       return number
     end
@@ -44,6 +44,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
