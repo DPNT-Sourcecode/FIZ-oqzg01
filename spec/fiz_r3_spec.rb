@@ -39,4 +39,3 @@ describe "FIZZBUZZ, if a number is a multiple of three then it returns 'fizz'" d
   end
 
 end
-
