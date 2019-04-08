@@ -13,14 +13,18 @@ class FizzBuzz
       result.push 'buzz'
     elsif number % 3 == 0 || str_ary.each.include?('3')
       result.push 'fizz'
-    elsif str_ary.length > 1 && str_ary.uniq.length == 1
+    elsif number.even? == true && str_ary.length > 1 && str_ary.uniq.length == 1
       result.push 'deluxe'
+    elsif number.even? == false && str_ary.length > 1 && str_ary.uniq.length == 1
+      result.push 'fake deluxe'
     else
       return number
     end
 
-    if str_ary.length > 1 && str_ary.uniq.length == 1
+    if number.even? == true str_ary.length > 1 && str_ary.uniq.length == 1
       result.push 'deluxe'
+    elsif number.even? == false && str_ary.length > 1 && str_ary.uniq.length == 1
+      result.push 'fake deluxe'
     end
 
     return result.uniq.join(' ')
@@ -28,4 +32,5 @@ class FizzBuzz
   end
 
 end
+
 
