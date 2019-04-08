@@ -50,5 +50,19 @@ describe "FIZZBUZZ, if a number is a multiple of three then it returns 'fizz'" d
     expect(FizzBuzz.new.fizz_buzz(50)).to eq('buzz deluxe')
   end
 
+  it "237" do
+    expect(FizzBuzz.new.fizz_buzz(237)).to eq('fizz fake deluxe')
+  end
+
+  it "3" do
+    expect(FizzBuzz.new.fizz_buzz(3)).to eq('fizz fake deluxe')
+  end
+
+  it "369" do
+    expect(FizzBuzz.new.fizz_buzz(369)).to eq('fizz fake deluxe')
+  end
+  
+
 end
+
 
