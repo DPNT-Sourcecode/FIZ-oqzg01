@@ -3,7 +3,9 @@ class FizzBuzz
 
   def fizz_buzz(number)
     str_numb = number.to_s
-    if str_numb.include?('3')
+    str_ary = str_numb.split('')
+    print str_ary
+    if str_ary.each.include('3')
       puts 'cool'
     else
       puts 'not cool'
@@ -28,6 +30,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
