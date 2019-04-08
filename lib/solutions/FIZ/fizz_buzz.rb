@@ -8,6 +8,7 @@ class FizzBuzz
     str_numb = number.to_s
     str_ary = str_numb.split('')
     result = []
+    print str_ary
 
 
 
@@ -29,7 +30,7 @@ class FizzBuzz
       result.push 'deluxe'
     end
 
-    if number.even? == false && str_ary.length > 1 && str_ary.uniq.length == 1
+    if number % 3 == 0 && str_ary.each.include?('3') && number.even? == false && str_ary.length > 1 && str_ary.uniq.length == 1 || number % 5 == 0 && str_ary.each.include?('5') && number.even? == false && str_ary.length > 1 && str_ary.uniq.length == 1
       result.push 'fake deluxe'
     end
 
@@ -40,4 +41,5 @@ class FizzBuzz
   end
 
 end
+
 
