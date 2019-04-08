@@ -11,6 +11,8 @@ class FizzBuzz
       return 'buzz'
     elsif number % 3 == 0 || str_ary.each.include?('3')
       return 'fizz'
+    elsif str_ary.all? == 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9
+      return 'deluxe'
     else
       return number
     end
@@ -18,3 +20,4 @@ class FizzBuzz
   end
 
 end
+
