@@ -19,8 +19,12 @@ class FizzBuzz
       return 'fizz'
     elsif str_ary.each.include?('5') && str_ary.each.include?('3')
       return  'fizz buzz'
+    elsif str_ary.each.include?('5') && number % 3 == 0
+      return 'fizz buzz'
     elsif str_ary.each.include?('5')
       return 'buzz'
+    elsif str_ary.each.include?('3') && number % 5 == 0
+      return 'fizz buzz'
     elsif str_ary.each.include?('3')
       return 'fizz'
     else
@@ -30,3 +34,4 @@ class FizzBuzz
   end
 
 end
+
