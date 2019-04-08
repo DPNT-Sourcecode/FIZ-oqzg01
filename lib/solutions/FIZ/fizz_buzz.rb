@@ -24,15 +24,12 @@ class FizzBuzz
       result.push 'deluxe'
     end
 
-    if str_ary[0] == 'deluxe'
-      str_ary[0].shift
-    end
-
-    return result.join(' ')
+    return result.uniq.join(' ')
 
   end
 
 end
+
 
 
 
