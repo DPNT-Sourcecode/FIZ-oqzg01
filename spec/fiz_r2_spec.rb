@@ -30,7 +30,8 @@ describe "FIZZBUZZ, if a number is a multiple of three then it returns 'fizz'" d
     expect(FizzBuzz.new.fizz_buzz(13)).to eq('fizz')
   end
 
+  it "returns 'fizz buzz' when the number is 546" do
+    expect(FizzBuzz.new.fizz_buzz(546)).to eq('fizz buzz')
+  end
+
 end
-
-
-
