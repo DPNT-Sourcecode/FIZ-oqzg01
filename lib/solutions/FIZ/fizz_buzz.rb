@@ -5,10 +5,16 @@ class FizzBuzz
     str_numb = number.to_s
     str_ary = str_numb.split('')
 
-    if number % 15 == 0 || str_ary.each.include?('3') && number % 5 == 0 || str_ary.each.include?('5') && number % 3 == 0 || str_ary.each.include?('5') && str_ary.each.include?('3')
-      return 'fizz buzz'
+    if number % 15 == 0 || str_ary.each.include?('3') && number % 5 == 0 || str_ary.each.include?('5') && number % 3 == 0 || str_ary.each.include?('5') && str_ary.each.include?('3') && str_ary.uniq.length != str_ary.length
+      return 'fizz buzz deluxe'
+    elsif number % 15 == 0 || str_ary.each.include?('3') && number % 5 == 0 || str_ary.each.include?('5') && number % 3 == 0 || str_ary.each.include?('5') && str_ary.each.include?('3')
+      return 'fizz buzz' 
+    elsif number % 5 == 0 || str_ary.each.include?('5') && str_ary.uniq.length != str_ary.length
+      return 'buzz deluxe'
     elsif number % 5 == 0 || str_ary.each.include?('5')
       return 'buzz'
+    elsif number % 3 == 0 || str_ary.each.include?('3') && str_ary.uniq.length != str_ary.length
+      return 'fizz deluxe'
     elsif number % 3 == 0 || str_ary.each.include?('3')
       return 'fizz'
     elsif str_ary.uniq.length != str_ary.length
@@ -20,6 +26,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
