@@ -5,7 +5,7 @@ class FizzBuzz
     str_numb = number.to_s
     str_ary = str_numb.split('')
     print str_ary
-    if str_ary.each.include('3')
+    if str_ary.each.include?('3')
       puts 'cool'
     else
       puts 'not cool'
@@ -17,11 +17,11 @@ class FizzBuzz
       return 'buzz'
     elsif number % 3 == 0
       return 'fizz'
-    elsif str_numb.include?('5' && '3')
+    elsif str_ary.each.include?('5') && str_ary.each.include?('3')
       return  'fizz buzz'
-    elsif str_numb.include('5')
+    elsif str_ary.each.include?('5')
       return 'buzz'
-    elsif str_numb.include('3')
+    elsif str_ary.each.include?('3')
       return 'fizz'
     else
       return number
@@ -30,6 +30,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
