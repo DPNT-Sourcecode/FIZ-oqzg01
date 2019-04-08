@@ -2,7 +2,13 @@
 class Hello
 
   def hello(friend_name)
-    raise 'Not implemented'
+    friend_name = friend_name
+    if friend_name.string? == true
+      return 'hello' + friend_name
+    else
+      raise 'Not implemented'
+    end
   end
 
 end
+
