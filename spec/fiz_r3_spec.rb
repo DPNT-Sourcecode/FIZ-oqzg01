@@ -11,7 +11,7 @@ describe "FIZZBUZZ, if a number is a multiple of three then it returns 'fizz'" d
   end
 
   it 'returns fizzbuzz when a multiple of three and five' do
-    expect(FizzBuzz.new.fizz_buzz(30)).to eq('fizz buzz')
+    expect(FizzBuzz.new.fizz_buzz(30)).to eq('fizz buzz deluxe')
   end
 
   it 'returns the given number when not a multiple of three and five' do
@@ -51,3 +51,4 @@ describe "FIZZBUZZ, if a number is a multiple of three then it returns 'fizz'" d
   end
 
 end
+
