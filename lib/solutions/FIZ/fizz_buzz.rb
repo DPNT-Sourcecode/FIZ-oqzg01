@@ -8,7 +8,6 @@ class FizzBuzz
     str_numb = number.to_s
     str_ary = str_numb.split('')
     result = []
-    print str_ary
 
 
 
@@ -25,6 +24,8 @@ class FizzBuzz
     else
       return number
     end
+    print result[-1]
+  
 
     if number % 3 == 0 && str_ary.each.include?('3') || number % 5 == 0 && str_ary.each.include?('5')
       result.push 'deluxe'
@@ -41,5 +42,6 @@ class FizzBuzz
   end
 
 end
+
 
 
