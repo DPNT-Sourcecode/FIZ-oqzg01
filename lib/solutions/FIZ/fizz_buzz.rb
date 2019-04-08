@@ -21,16 +21,20 @@ class FizzBuzz
       return number
     end
 
-    if number.even? == true str_ary.length > 1 && str_ary.uniq.length == 1
+    if number.even? == true && str_ary.length > 1 && str_ary.uniq.length == 1
       result.push 'deluxe'
-    elsif number.even? == false && str_ary.length > 1 && str_ary.uniq.length == 1
+    end
+    if number.even? == false && str_ary.length > 1 && str_ary.uniq.length == 1
       result.push 'fake deluxe'
     end
+
+    print result
 
     return result.uniq.join(' ')
 
   end
 
 end
+
 
 
