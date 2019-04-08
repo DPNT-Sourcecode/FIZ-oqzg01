@@ -17,7 +17,7 @@ class FizzBuzz
     else
       return number
     end
-    
+
     if  str_ary.length > 1 && str_ary.uniq.length == 1
       result.push ' deluxe'
     end
@@ -27,4 +27,5 @@ class FizzBuzz
   end
 
 end
+
 
