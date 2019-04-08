@@ -11,7 +11,7 @@ class FizzBuzz
       return 'buzz'
     elsif number % 3 == 0 || str_ary.each.include?('3')
       return 'fizz'
-    elsif str_ary.all? == 7
+    elsif str_ary.uniq.length != str_ary.length
       return 'deluxe'
     else
       return number
@@ -20,6 +20,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
