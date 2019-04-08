@@ -6,4 +6,3 @@ describe "returns 'hello world'" do
   end
 
 end
-
