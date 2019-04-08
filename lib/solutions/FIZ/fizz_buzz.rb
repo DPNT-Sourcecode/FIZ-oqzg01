@@ -24,13 +24,12 @@ class FizzBuzz
     else
       return number
     end
-    print result[-1]
 
 
-    if number % 3 == 0 && str_ary.each.include?('3') && number.even? == true && str_ary.length > 1 && str_ary.uniq.length == 1
+    if number % 3 == 0 && str_ary.each.include?('3') && number.even? == true && str_ary.length > 1
       result.push 'deluxe'
     end
-    if number % 5 == 0 && str_ary.each.include?('5') && number.even? == true && str_ary.length > 1 && str_ary.uniq.length == 1
+    if number % 5 == 0 && str_ary.each.include?('5') && number.even? == true && str_ary.length > 1
       result.push 'deluxe'
     end
     if number % 3 == 0 && str_ary.each.include?('3') && number.even? == false && str_ary.length > 1 && str_ary.uniq.length == 1
@@ -39,7 +38,7 @@ class FizzBuzz
     if number % 5 == 0 && str_ary.each.include?('5') && number.even? == false && str_ary.length > 1 && str_ary.uniq.length == 1
       result.push 'fake deluxe'
     end
-    
+
     print result
 
     return result.uniq.join(' ')
@@ -47,3 +46,4 @@ class FizzBuzz
   end
 
 end
+
