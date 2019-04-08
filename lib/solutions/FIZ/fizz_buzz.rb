@@ -17,12 +17,17 @@ class FizzBuzz
       return 'fizz'
     elsif str_numb.include?('5' && '3')
       return  'fizz buzz'
+    elsif str_numb.include('5')
+      return 'buzz'
+    elsif str_numb.include('3')
+      return 'fizz'
     else
       return number
-    end 
+    end
 
   end
 
 end
+
 
 

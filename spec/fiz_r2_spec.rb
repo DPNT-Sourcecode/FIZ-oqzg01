@@ -23,9 +23,14 @@ describe "FIZZBUZZ, if a number is a multiple of three then it returns 'fizz'" d
   end
 
   it "returns 'buzz' when the number includes the number 5" do
-    expect(FizzBuzz.new.fizz_buzz(53)).to eq('fizz buzz')
+    expect(FizzBuzz.new.fizz_buzz(55)).to eq('buzz')
+  end
+
+  it "returns 'fizz' when the number includes the number 3" do
+    expect(FizzBuzz.new.fizz_buzz(13)).to eq('fizz')
   end
 
 end
+
 
 
