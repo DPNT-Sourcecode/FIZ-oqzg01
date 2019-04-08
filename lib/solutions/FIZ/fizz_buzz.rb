@@ -4,7 +4,6 @@ class FizzBuzz
   def fizz_buzz(number)
     str_numb = number.to_s
     str_ary = str_numb.split('')
-    print str_ary.uniq.length
     result = []
 
 
@@ -29,3 +28,4 @@ class FizzBuzz
   end
 
 end
+
